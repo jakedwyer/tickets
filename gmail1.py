@@ -1,8 +1,9 @@
 import imaplib, getpass, email, os, re
 import parsedatetime as pdt
 
-user = "mjdwyer@gmail.com"
-pwd = "43silver"
+user = raw_input('enter email: ')
+pwd = raw_input('enter password: ')
+
 
 mail = imaplib.IMAP4_SSL('imap.gmail.com')
 mail.login(user, pwd)
