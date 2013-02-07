@@ -2,11 +2,11 @@ import oauth2 as oauth
 import oauth2.clients.imap as imaplib
 
 
-clientID = "955724022201.apps.googleusercontent.com";
-clientSecret = "uSo45SZzjwRurVOCYekgUSYW";
+clientID = "955724022201-hsiphrr9ivitneeee6b82t8np6250q14.apps.googleusercontent.com"
+clientSecret = "yyLNuQoDsdMON4LbO3BU8rYP"
 
 auth_endpoint= "https://accounts.google.com/o/oauth2/auth"
-consumer = oauth.Consumer('955724022201.apps.googleusercontent.com', 'uSo45SZzjwRurVOCYekgUSYW')
+consumer = oauth.Consumer(clientID, clientSecret)
 
 token_request_uri = "https://accounts.google.com/o/oauth2/auth"
 response_type = "code"
