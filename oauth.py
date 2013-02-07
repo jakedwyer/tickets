@@ -6,6 +6,7 @@ clientID = "955724022201.apps.googleusercontent.com";
 clientSecret = "uSo45SZzjwRurVOCYekgUSYW";
 
 auth_endpoint= "https://accounts.google.com/o/oauth2/auth"
+consumer = oauth.Consumer('955724022201.apps.googleusercontent.com', 'uSo45SZzjwRurVOCYekgUSYW')
 
 token_request_uri = "https://accounts.google.com/o/oauth2/auth"
 response_type = "code"
