@@ -13,12 +13,7 @@ client_id = '955724022201.apps.googleusercontent.com'
 redirect_uri = "urn:ietf:wg:oauth:2.0:oob"
 scope = "https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email"
 
-url = "{token_request_uri}?response_type={response_type}&client_id={client_id}&redirect_uri={redirect_uri}&scope={scope}".format(
-        token_request_uri = token_request_uri,
-        response_type = response_type,
-        client_id = client_id,
-        redirect_uri = redirect_uri,
-        scope = scope)
+url = token_request_uri + '?response_type=' + response_type + '&client_id=' + client_id + '&redirect_uri=' + redirect_uri + '&scope=' + scope
 print url
 
         
