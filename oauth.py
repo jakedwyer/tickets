@@ -23,7 +23,7 @@ print client
 
 
 
-resp, content = client.request(TokenEndpoint, "GET")
+resp, content = client.request(url, "GET")
 if resp['status'] != '200':
     raise Exception("Invalid response %s." % resp['status'])
 
